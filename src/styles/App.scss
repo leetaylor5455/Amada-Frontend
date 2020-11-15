@@ -1,0 +1,44 @@
+@import 'colours.scss';
+
+@import 'Home.scss';
+@import 'Header.scss';
+@import 'Nav.scss';
+@import 'Hero.scss';
+
+@font-face {
+    font-family: 'Eras';
+    src: url('./fonts/eras.woff');
+}
+
+@font-face {
+    font-family: 'Fidena';
+    src: url('./fonts/Fidena.woff');
+}
+
+html {
+    background-color: $green;
+    color: white;
+}
+
+header {
+    font-family: 'Fidena', sans-serif;
+}
+
+body {
+    font-family: 'Eras', sans-serif
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:active,
+a:visited {
+    color: white;
+}
