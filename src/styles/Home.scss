@@ -1,36 +1,60 @@
-.hero-image {
-  height: 50%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 main {
   font-size: 24px;
-  height: 10000px;
+
+  h1 {
+    color: $green;
+    margin: 30px auto;
+    font-size: 52px;
+  }
 }
 
 .home {
   display: grid;
-  column-gap: 50px;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr;
+  row-gap: 10vw;
+  margin-top: 10vw !important;
+  margin-bottom: 20vw !important;
 
-  .home-image {
-    margin-top: 30px;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  .grid-row-2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 
-  .home-text {
-    line-height: 175%;
+  .grid-row-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .home-image {
+    margin: 0;
+    width: 100%;
   }
 
   .right {
-    text-align: right;
+    margin: auto auto auto -70px;
+    padding-right: 70px;
+  }
+
+  .left {
+    margin: auto -70px auto auto;
+  }
+
+  .home-text {
+    background-color: #ddd;
+    padding: 4.5rem;
+    color: #333;
+    line-height: 120%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05), 0 6px 12px rgba(0, 0, 0, 0.06);
+    z-index: 8;
+
+    a {
+      color: #222 !important;
+    }
+
+    .at-amada-image {
+      position: relative;
+    }
+
   }
 
 }

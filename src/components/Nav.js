@@ -15,9 +15,9 @@ function Nav() {
                 <Link to='/contact'>
                     <li>contact</li>
                 </Link>
-                <Link>
+                {/* <Link>
                     <li>my kitchen</li>
-                </Link>
+                </Link> */}
             </ul>
         </nav>
     )

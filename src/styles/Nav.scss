@@ -13,13 +13,13 @@ nav {
     }
 
     a {
+        transition: .15s ease-in-out;
         display: block;
         text-align: right;
         text-decoration: none;
     }
 
     a:hover {
-        transition: .1s ease-in-out;
         transform: scale(1.1);
     }
 

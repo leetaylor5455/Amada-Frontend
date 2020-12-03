@@ -1,18 +1,76 @@
 .hero {
+    font-family: 'Fidena';
+    width: 100vw;
+    // min-height: 100vh;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    img {
-        width: 100%;
+    overflow: hidden;
+    background-color: $green;
+
+    .hero-image {
+        z-index: 1;
+        position: relative;
+        width: 100vw;
+        margin-bottom: -1.33333vh;
+        top: calc(50% + 1.33333vw);
+        img {
+            min-width: 100vw;
+            min-height: 50vh;
+        }
+        .hero-action {
+            position: absolute;
+            margin: 0 0 200px 200px;
+            font-family: 'Poppins';
+            line-height: 90%;
+            font-size: 28px;
+            top: 50%;
+        
+            .hero-text {
+                max-width: 300px;
+                // backdrop-filter: blur(2px);
+                background-color: rgba(83, 83, 83, 0.6);
+                border: none;
+                color: #fff;
+                padding: 2rem 2rem 4rem 2rem;
+                font-size: 20px;
+            }
+        
+            .hero-button {
+                position: absolute;
+                bottom: 20px;
+                right: -60px;
+                background-color: $green;
+                padding: 1rem;
+                font-size: 20px;
+                transition: .2s ease-in-out;
+                cursor: pointer;
+                border: 2px solid $green;
+            }
+        
+            .hero-button:hover {
+                background: transparent;
+                transform: scale(1.1);
+            }
+        }
     }
-}
 
-.at-amada-container {
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.at-amada-image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    .amada-home-text {
+        min-width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: calc(-50vh + 1.33333vw);
+    
+        h1 {
+            margin: 0;
+            // font-weight: normal;
+            font-size: 20vw;
+            text-align: center;
+            z-index: 2;
+            color: white;
+        }
+    }
 }

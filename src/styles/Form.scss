@@ -1,0 +1,19 @@
+.form-container {
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05), 0 6px 12px rgba(0, 0, 0, 0.06);
+
+    h1 {
+        padding: 1rem;
+        font-family: 'Raleway';
+        color: #333;
+    }
+}
+
+input {
+    display: block;
+    border: none;
+    padding: 1rem;
+    font-size: 24px;
+    font-family: 'Raleway'
+}
